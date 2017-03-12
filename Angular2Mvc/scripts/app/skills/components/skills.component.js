@@ -25,7 +25,7 @@ var SkillsComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'skills',
-            template: '<div class="panel panel-info" style="margin-top: 75px"><div class="panel-heading">My SKill</div><div class="panel-body"><ul class="list-group"><li *ngFor="let skillItem of skills"><technical-skill [techSkill]="skillItem"></technical-skill></li></ul></div></div>'
+            template: '<div class="panel panel-info" style="margin-top: 75px"><div class="panel-heading">Skill Management</div><div class="panel-body"><ul class="list-group"><li *ngFor="let skillItem of skills"><technical-skill [techSkill]="skillItem"></technical-skill></li></ul></div></div>'
         }), 
         __metadata('design:paramtypes', [skills_service_1.SkillService])
     ], SkillsComponent);

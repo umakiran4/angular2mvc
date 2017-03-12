@@ -1,4 +1,4 @@
 ﻿<div *ngIf="techSkill">
-    {{techSkill.id}}
+    <a [routerLink]="['/skill-detail', techSkill.id]"> {{techSkill.id}} </a>
     {{techSkill.name}}
 </div>

@@ -21,7 +21,7 @@ var SkillComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'technical-skill',
-            template: '<div *ngIf="techSkill">{{techSkill.id}} {{techSkill.name}}</div>'
+            template: '<div *ngIf="techSkill"><a [routerLink]="[\'/skill-detail\', techSkill.id]">{{techSkill.id}}</a> {{techSkill.name}}</div>'
         }), 
         __metadata('design:paramtypes', [])
     ], SkillComponent);

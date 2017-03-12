@@ -140,6 +140,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\skills\views\skill-detail.component.html" />
     <Content Include="app\skills\views\skill.component.html" />
     <Content Include="app\skills\views\skills.component.html" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -211,9 +212,11 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\core\core.module.ts" />
     <TypeScriptCompile Include="app\models\skill.ts" />
+    <TypeScriptCompile Include="app\skills\components\skill-detail.component.ts" />
     <TypeScriptCompile Include="app\skills\components\skill.component.ts" />
     <TypeScriptCompile Include="app\skills\components\skills.component.ts" />
     <TypeScriptCompile Include="app\skills\services\skills.service.ts" />
+    <TypeScriptCompile Include="app\skills\skill-routing.module.ts" />
     <TypeScriptCompile Include="app\skills\skill.module.ts" />
     <TypeScriptCompile Include="main.ts" />
   </ItemGroup>

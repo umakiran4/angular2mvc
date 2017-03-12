@@ -1,0 +1,7 @@
+﻿<div *ngIf="techSkill" style="margin-top:75px">
+    {{ techSkill.name }} Version {{ techSkill.version }}
+    From {{techSkill.yearFrom | date}} To - {{techSkill.yearTo | date}}
+
+
+</div>
+<a (click)="goBack()">Back</a>

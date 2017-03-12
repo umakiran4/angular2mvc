@@ -9,24 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var skill_routing_module_1 = require('./skill-routing.module');
-var skills_service_1 = require('../skills/services/skills.service');
-var skill_component_1 = require('../skills/components/skill.component');
-var skills_component_1 = require('../skills/components/skills.component');
+var router_1 = require('@angular/router');
 var skill_detail_component_1 = require('../skills/components/skill-detail.component');
-var SkillModule = (function () {
-    function SkillModule() {
+exports.routes = [
+    { path: 'skill-detail/:id', component: skill_detail_component_1.SkillDetailComponent }
+];
+var SkillRoutingModule = (function () {
+    function SkillRoutingModule() {
     }
-    SkillModule = __decorate([
+    SkillRoutingModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, skill_routing_module_1.SkillRoutingModule],
-            declarations: [skill_component_1.SkillComponent, skills_component_1.SkillsComponent, skill_detail_component_1.SkillDetailComponent],
-            providers: [skills_service_1.SkillService],
-            exports: [common_1.CommonModule, skill_component_1.SkillComponent, skill_detail_component_1.SkillDetailComponent]
+            imports: [router_1.RouterModule.forChild(exports.routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], SkillModule);
-    return SkillModule;
+    ], SkillRoutingModule);
+    return SkillRoutingModule;
 }());
-exports.SkillModule = SkillModule;
+exports.SkillRoutingModule = SkillRoutingModule;

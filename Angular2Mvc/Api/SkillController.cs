@@ -36,5 +36,13 @@ namespace Angular2Mvc.Api
             var response = Request.CreateResponse(HttpStatusCode.OK, await Task.FromResult(allSkills));
             return response;
         }
+        
+        [Route("skill-detail")]
+        public async Task<HttpResponseMessage> GetSkillById(int id)
+        {
+            var skills = await Task.FromResult(allSkills);
+            var response = Request.CreateResponse(HttpStatusCode.OK, skills.Find(s => s.Id == id));
+            return response;            
+        }
     }
 }

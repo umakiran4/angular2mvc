@@ -20,6 +20,10 @@ var SkillService = (function () {
         var allSkillsUrl = 'api/all-skills';
         return this.http.get(allSkillsUrl, { headers: this.headers }).map(function (res) { return res.json(); });
     };
+    SkillService.prototype.getSKill = function (id) {
+        var skillUrl = 'api/skill-detail';
+        return this.http.get(skillUrl + "?id=" + id, { headers: this.headers }).map(function (res) { return res.json(); });
+    };
     SkillService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
