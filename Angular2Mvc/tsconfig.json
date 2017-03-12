@@ -9,11 +9,7 @@
     "removeComments": false,
     "sourceMap": true,
     "target": "es5",
-    "moduleResolution": "node",
-    "typeRoots": [
-      "../node_modules/@types/"
-    ],
-    "types": ["core-js"]
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules",

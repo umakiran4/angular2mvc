@@ -9,6 +9,7 @@ import { Skill } from '../../models/skill';
     templateUrl: '../views/skill.component.html'
 })
 
-export class SkillComponent {
+export class SkillComponent  {
     @Input() techSkill: Skill;
+    
 }

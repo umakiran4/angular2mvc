@@ -1,16 +1,16 @@
 ﻿import { NgModule } from '@angular/core';
-import { CoreModule } from '../core/core.module';
 
+import { CommonModule } from '@angular/common';
 import { SkillService } from '../skills/services/skills.service';
 
 import { SkillComponent } from '../skills/components/skill.component';
 import { SkillsComponent } from '../skills/components/skills.component';
 
 @NgModule({
-    imports: [CoreModule],
+    imports: [CommonModule],
     declarations: [SkillComponent, SkillsComponent],
     providers: [SkillService],
-    exports: [SkillComponent]
+    exports: [CommonModule, SkillComponent]
 })
 
 export class SkillModule { }

@@ -1,10 +1,9 @@
-﻿<div class="panel panel-info">
-    <div class="panel-heading">My SKill</div>
+﻿<div class="panel panel-info" style="margin-top: 75px">
+    <div class="panel-heading">Skill Management</div>
     <div class="panel-body">
         <ul class="list-group">
             <li *ngFor="let skillItem of skills">
-                {{skillItem.id}}
-                {{skillItem.name}}
+                <technical-skill [techSkill]="skillItem"> </technical-skill>
             </li>
         </ul>
     </div>
